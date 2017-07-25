@@ -87,6 +87,7 @@ public class LaptopsPage extends AbstractPage {
     }
 
     public void clickShowFilterResultsButton(){
+        $(showFilterResultsButton).waitUntilVisible();
         $(showFilterResultsButton).click();
     }
 
