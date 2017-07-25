@@ -1,6 +1,7 @@
 package pages;
 
 import decarator.AbstractPage;
+import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import org.openqa.selenium.WebElement;
 
@@ -38,7 +39,7 @@ public class LaptopsPage extends AbstractPage {
     @FindBy(xpath = "//a[@class='Paging__PageLink ']")
     private List<WebElement> searchPageResults;
 
-    @FindBy(xpath = "//div[@class='ModelList__ModelBlockRow']//span[@itemprop='name']")
+    @FindBy(xpath = "//div[@class='ModelList__ModelBlockRow']")
     private List<WebElement> itemsOnCurrentPage;
 
     @FindBy(xpath = "//div[@class='PanelSetUp__SortBlock']")
@@ -51,6 +52,7 @@ public class LaptopsPage extends AbstractPage {
     private WebElement sortByPriceAscDropdownValue;
 
     private static final String LAPTOP_MANUFACTURE_CHECKBOX = "//div[@id='Attr_prof_1000']//label[text()='%s']";
+    private static final String ITEM_NAME_XPATH = ".//span[@itemprop='name']";
 
     public void selectManufacture(String company){
         if ($(String.format(LAPTOP_MANUFACTURE_CHECKBOX, company)).isCurrentlyVisible()){
@@ -116,11 +118,12 @@ public class LaptopsPage extends AbstractPage {
     }
 
     public String getFirstItemNameOnPage(){
-        return $(itemsOnCurrentPage.get(0)).getText();
+        return itemsOnCurrentPage.get(0).findElement(By.xpath(ITEM_NAME_XPATH)).getText();
     }
 
     public String getLastItemNameOnPage(){
-        return $(itemsOnCurrentPage.get(itemsOnCurrentPage.size() - 1)).getText();
+        return itemsOnCurrentPage.get(itemsOnCurrentPage.size() - 1)
+                    .findElement(By.xpath(ITEM_NAME_XPATH)).getText();
     }
 
     public void openLastPageOfResults(){
