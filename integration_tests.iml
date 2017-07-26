@@ -122,8 +122,8 @@
     <orderEntry type="library" name="Maven: com.google.jimfs:jimfs:1.1" level="project" />
     <orderEntry type="library" name="Maven: es.nitaur.markdown:txtmark:0.16" level="project" />
     <orderEntry type="library" name="Maven: net.serenity-bdd:serenity-junit:1.5.3" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.6.1" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.7.7" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.assertj:assertj-core:1.7.0" level="project" />
+    <orderEntry type="library" name="Maven: org.assertj:assertj-core:1.7.0" level="project" />
   </component>
 </module>
