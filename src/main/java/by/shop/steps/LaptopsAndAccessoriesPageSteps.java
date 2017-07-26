@@ -1,8 +1,8 @@
-package steps;
+package by.shop.steps;
 
+import by.shop.pages.LaptopsAndAccessoriesPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import pages.LaptopsAndAccessoriesPage;
 
 /**
  *

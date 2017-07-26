@@ -1,12 +1,14 @@
+package by.shop;
+
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 import org.junit.After;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-import steps.LaptopsAndAccessoriesPageSteps;
-import steps.LaptopsPageSteps;
-import steps.MainPageSteps;
+import by.shop.steps.LaptopsAndAccessoriesPageSteps;
+import by.shop.steps.LaptopsPageSteps;
+import by.shop.steps.MainPageSteps;
 
 /**
  *

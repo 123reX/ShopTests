@@ -1,4 +1,4 @@
-package decarator;
+package by.shop.decarator;
 
 import net.serenitybdd.core.pages.PageObject;
 

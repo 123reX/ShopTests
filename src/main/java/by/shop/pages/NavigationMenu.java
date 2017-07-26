@@ -1,7 +1,7 @@
-package pages;
+package by.shop.pages;
 
-import decarator.AbstractPage;
-import enums.NavigationMenuItems;
+import by.shop.decarator.AbstractPage;
+import by.shop.enums.NavigationMenuItems;
 import net.serenitybdd.core.annotations.findby.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;

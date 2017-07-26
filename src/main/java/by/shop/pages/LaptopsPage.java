@@ -1,6 +1,6 @@
-package pages;
+package by.shop.pages;
 
-import decarator.AbstractPage;
+import by.shop.decarator.AbstractPage;
 import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import org.openqa.selenium.WebElement;
@@ -51,15 +51,15 @@ public class LaptopsPage extends AbstractPage {
     @FindBy(xpath = "//span[@class='chzn-drop']//li[@class='active-result']")
     private WebElement sortByPriceAscDropdownValue;
 
-    private static final String LAPTOP_MANUFACTURE_CHECKBOX = "//div[@id='Attr_prof_1000']//label[text()='%s']";
+    private static final String MANUFACTURE_CHECKBOX = "//div[@id='Attr_prof_1000']//label[text()='%s']";
     private static final String ITEM_NAME_XPATH = ".//span[@itemprop='name']";
 
     public void selectManufacture(String company){
-        if ($(String.format(LAPTOP_MANUFACTURE_CHECKBOX, company)).isCurrentlyVisible()){
-            $(String.format(LAPTOP_MANUFACTURE_CHECKBOX, company)).click();
+        if ($(String.format(MANUFACTURE_CHECKBOX, company)).isCurrentlyVisible()){
+            $(String.format(MANUFACTURE_CHECKBOX, company)).click();
         } else {
             $(moreManufacturesLink).click();
-            $(String.format(LAPTOP_MANUFACTURE_CHECKBOX, company)).click();
+            $(String.format(MANUFACTURE_CHECKBOX, company)).click();
         }
     }
 

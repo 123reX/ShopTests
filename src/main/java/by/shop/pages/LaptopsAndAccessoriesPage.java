@@ -1,6 +1,6 @@
-package pages;
+package by.shop.pages;
 
-import decarator.AbstractPage;
+import by.shop.decarator.AbstractPage;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import org.openqa.selenium.WebElement;
 

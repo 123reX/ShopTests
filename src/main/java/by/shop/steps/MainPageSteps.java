@@ -1,9 +1,9 @@
-package steps;
+package by.shop.steps;
 
+import by.shop.pages.MainPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.steps.ScenarioSteps;
-import pages.MainPage;
 
 /**
  *

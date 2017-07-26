@@ -1,4 +1,6 @@
-import enums.NavigationMenuItems;
+package by.shop;
+
+import by.shop.enums.NavigationMenuItems;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -22,8 +24,8 @@ public class LaptopTests extends BaseTest {
                 .specifyDiagonalRange("12", "13.4")
                 .clickShowTheResult();
                 //.shouldSeeTotalItemsFound(72);
-        String theCheapestItem = laptopPage.getCheapestItemAfterAscSortingByPrice();
-        laptopPage.shouldSeeTheCheapestItemLastDescSorting(theCheapestItem);
+        String theCheapestItemName = laptopPage.getCheapestItemAfterAscSortingByPrice();
+        laptopPage.shouldSeeTheCheapestItemLastDescSorting(theCheapestItemName);
     }
 
 }

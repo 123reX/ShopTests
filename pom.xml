@@ -58,7 +58,7 @@
                 <version>2.18</version>
                 <configuration>
                     <includes>
-                        <include>**/*Test.java</include>
+                        <include>**/*Tests.java</include>
                     </includes>
                     <systemProperties>
                         <surefire.rerunFailingTestsCount>1</surefire.rerunFailingTestsCount>

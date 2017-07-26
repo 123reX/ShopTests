@@ -1,9 +1,9 @@
-package steps;
+package by.shop.steps;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 import org.junit.Assert;
-import pages.LaptopsPage;
+import by.shop.pages.LaptopsPage;
 
 /**
  *
